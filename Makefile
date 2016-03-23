@@ -13,7 +13,7 @@ test: helloworld
 		echo "Failed 1 arg test."; \
 		exit 2; \
 	fi
-	@if [ "$$(java HelloWorld Bob Sally)" != "Hello there!" ]; then \
+	@if [ "$$(java HelloWorld Bob Sally)" != "Hello there, Sally!" ]; then \
 		echo "Failed multi arg test."; \
 		exit 3; \
 	fi 
