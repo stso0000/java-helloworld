@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xe
+
 javac HelloWorld.java
 if [ "$(java HelloWorld)" != "Hello there!" ]; then \
 	echo "Failed 0 arg test."; \
