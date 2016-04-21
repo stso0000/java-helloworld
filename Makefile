@@ -17,3 +17,7 @@ test: helloworld
 		echo "Failed multi arg test."; \
 		exit 3; \
 	fi 
+	@if [ "$$(java HelloWorld Bob Sally Dude)" != "Hello there, Dude!" ]; then \
+		echo "Failed multi arg test."; \
+		exit 4; \
+	fi 
